@@ -1,0 +1,89 @@
+.todo-block{
+    text-align: center;
+    font-family: Arial;
+}
+.todo-block > *{
+    padding-bottom: 20px;
+}
+.todo-title{
+    margin-bottom: 0;
+}
+.task-list {
+    margin: auto;
+    width: 80%;
+    background: ghostwhite;
+    padding: 0;
+}
+.task-list__item{
+    border-bottom: 2px solid pink;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.task-list:first-child{
+    border-radius: 10px;
+}
+.list-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 5;
+}
+.done-column,
+.remove-column{
+    flex: 1;
+}
+.task-filter__done,
+.task-filter__deadline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.task-add__input,
+.task-add__date{
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    background: ghostwhite;
+    font-size: 16px;
+    outline: none;
+}
+.task-add__date{
+    width: 15%;
+}
+.task-add__button{
+    outline: none;
+    padding: 10px;
+    width: 5%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: pink;
+}
+.deadline__button,
+.done__button{
+    outline: none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: pink;
+}
+.task-add{
+    align-items: center;
+}
+.hide-done,
+.hide-deadline{
+    display: none;
+}
+.task-filter{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.task-filter__done > *,
+.task-filter__deadline > *{
+    padding-right: 10px;
+}

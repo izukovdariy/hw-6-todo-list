@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-block">
+        <h1 class="todo-title">Todo List</h1>
+        <div class="task-add">
+            <input type="text" class="task-add__input" placeholder="New task">
+            <input type="date" class="task-add__date">
+            <input type="button" class="task-add__button" value="Add">
+        </div>
+        <div class="task-filter">
+            <div class="task-filter__done">
+                <p><input name="done-filter" type="radio" value="Done" class="done__radio">Done</p>
+                <p><input name="done-filter" type="radio" value="Not done" class="not-done__radio">Not done</p>
+                <input type="button" value="Reset done" class="done__button">
+            </div>
+            <div class="task-filter__deadline">
+                <p><input name="deadline-filter" type="radio" value="Tomorrow" class="tomorrow__radio">Tomorrow</p>
+                <p><input name="deadline-filter" type="radio" value="Next week" class="next-week__radio">Next week</p>
+                <input type="button" value="Reset deadline" class="deadline__button">
+            </div>
+        </div>
+        <div class="task-block">
+            <ul class="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
